@@ -144,7 +144,7 @@ int main()
     buildHuffmanTree(minHeap, huffmanCode);
 
     // Aquí se puede llamar esta función para codificar. Lo haremos en la ETAPA V
-    codificarPalabra(huffmanCode, 3);
+    codificarPalabra(huffmanCode, 27);
 
     return 0;
 }

@@ -62,6 +62,7 @@ int main()
     minHeap.insert(nodeY);
     minHeap.insert(nodeZ);
 
+
     // Mostrar el tamaño del montículo
     std::cout << "Tamano del monticulo: " << minHeap.getSize() << std::endl;
 

@@ -5,8 +5,8 @@
 
 struct Node
 {
-    char ch;
-    int freq;
+    std::string ch;
+    double prob;  // Cambio de int a double
     Node *left, *right;
 };
 
@@ -20,7 +20,7 @@ public:
         ++size;
         int i = size - 1;
 
-        while (i && minHeapNode->freq < array[(i - 1) / 2]->freq)
+        while (i && minHeapNode->prob < array[(i - 1) / 2]->prob)
         {
             array[i] = array[(i - 1) / 2];
             i = (i - 1) / 2;
@@ -64,10 +64,10 @@ private:
         int left = 2 * idx + 1;
         int right = 2 * idx + 2;
 
-        if (left < size && array[left]->freq < array[smallest]->freq)
+        if (left < size && array[left]->prob < array[smallest]->prob)
             smallest = left;
 
-        if (right < size && array[right]->freq < array[smallest]->freq)
+        if (right < size && array[right]->prob < array[smallest]->prob)
             smallest = right;
 
         if (smallest != idx)

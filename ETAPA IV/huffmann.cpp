@@ -80,18 +80,65 @@ void codificarPalabra(const CharCode *huffmanCode, int huffmanCodeSize)
 
 int main()
 {
-    // Crear nodos independientes
-    Node *nodeA = new Node{"\u062A", 0.1, nullptr, nullptr};  // Cambio de int a double
-    Node *nodeB = new Node{"\u0628", 0.3, nullptr, nullptr};  // Cambio de int a double
-    Node *nodeC = new Node{"\u0627", 0.7, nullptr, nullptr};  // Cambio de int a double
+     // Crear nodos independientes
+    Node *nodeA = new Node{"\u0627", 0.29, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeB = new Node{"\u0628", 0.18, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeC = new Node{"\u062A", 0.50, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeD = new Node{"\u062B", 0.37, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeE = new Node{"\u062C", 0.72, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeF = new Node{"\u062D", 0.51, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeG = new Node{"\u062E", 0.23, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeH = new Node{"\u062F", 0.40, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeI = new Node{"\u0630", 0.71, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeJ = new Node{"\u0631", 0.66, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeK = new Node{"\u0632", 0.12, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeL = new Node{"\u0633", 0.55, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeM = new Node{"\u0634", 0.67, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeN = new Node{"\u0635", 0.37, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeEnie = new Node{"\u0636", 0.20, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeO = new Node{"\u0637", 0.09, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeP = new Node{"\u0638", 0.35, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeQ = new Node{"\u0639", 0.31, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeR = new Node{"\u063A", 0.77, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeS = new Node{"\u0641", 0.94, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeT = new Node{"\u0642", 0.19, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeU = new Node{"\u0643", 0.66, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeV = new Node{"\u0644", 0.81, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeW = new Node{"\u0646", 0.34, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeX = new Node{"\u0647", 0.22, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeY = new Node{"\u0648", 0.56, nullptr, nullptr};  // Cambio de int a double
+    Node *nodeZ = new Node{"\u064A", 0.04, nullptr, nullptr};  // Cambio de int a double
 
     // Crear el montículo e insertar los nodos
     MinHeap minHeap;
     minHeap.insert(nodeA);
     minHeap.insert(nodeB);
     minHeap.insert(nodeC);
-
-    CharCode huffmanCode[500]; // Asumiendo un máximo de 100 caracteres
+    minHeap.insert(nodeD);
+    minHeap.insert(nodeE);
+    minHeap.insert(nodeF);
+    minHeap.insert(nodeG);
+    minHeap.insert(nodeH);
+    minHeap.insert(nodeI);
+    minHeap.insert(nodeJ);
+    minHeap.insert(nodeK);
+    minHeap.insert(nodeL);
+    minHeap.insert(nodeM);
+    minHeap.insert(nodeN);
+    minHeap.insert(nodeEnie);
+    minHeap.insert(nodeO);
+    minHeap.insert(nodeP);
+    minHeap.insert(nodeQ);
+    minHeap.insert(nodeR);
+    minHeap.insert(nodeS);
+    minHeap.insert(nodeT);
+    minHeap.insert(nodeU);
+    minHeap.insert(nodeV);
+    minHeap.insert(nodeW);
+    minHeap.insert(nodeX);
+    minHeap.insert(nodeY);
+    minHeap.insert(nodeZ);
+    CharCode huffmanCode[100]; // Asumiendo un máximo de 100 caracteres
 
     buildHuffmanTree(minHeap, huffmanCode);
 
